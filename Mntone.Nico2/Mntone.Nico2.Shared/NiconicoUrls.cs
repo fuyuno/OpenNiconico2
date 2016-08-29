@@ -62,6 +62,12 @@
         private const string LiveApiUrlBase = LiveUrlBase + "api/";
 
         /// <summary>
+        ///     ニコニコ生放送 お気に入り放送 URL
+        ///     {0}: Page Number
+        /// </summary>
+        public static string LiveBookmarksUrl => LiveApiUrlBase + "bookmark/json?type=onair&page={0}&number=6";
+
+        /// <summary>
         ///     ニコニコ生放送 トップ ページ URL テキスト
         /// </summary>
         public static string LiveTopPageUrl => LiveUrlBase;
