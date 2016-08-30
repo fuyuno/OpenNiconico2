@@ -7,7 +7,7 @@ namespace Mntone.Nico2.Live.Bookmark
 {
     internal sealed class BookmarkClient
     {
-        public static async Task<BookmarkResponse> BookmarksAsync(NiconicoContext context, int page = 1)
+        public static async Task<BookmarkResponse> GetBookmarksAsync(NiconicoContext context, int page = 1)
         {
             var response = await context.GetClient().GetStringAsync(string.Format(NiconicoUrls.LiveBookmarksUrl, page));
             var serializer = new DataContractJsonSerializer(typeof(BookmarkResponse));

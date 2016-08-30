@@ -397,7 +397,7 @@ namespace Mntone.Nico2.Live
 
 #endif
 
-        public Task<BookmarkResponse> BookmarksAsync(int page = 1)
-            => BookmarkClient.BookmarksAsync(_context, page);
+        public Task<BookmarkResponse> GetBookmarksAsync(int page = 1)
+            => BookmarkClient.GetBookmarksAsync(_context, page);
     }
 }
