@@ -7,10 +7,6 @@
     {
         private const string DomainBase = ".nicovideo.jp/";
 
-        private const string LiveApiForCommunityUrlBase = "http://watch.live.nicovideo.jp/api/";
-        private const string LiveApiForOfficialOrChannelUrlBase = "http://ow.live.nicovideo.jp/api/";
-        private const string LiveApiForExternalUrlBase = "http://ext.live.nicovideo.jp/api/";
-
         /// <summary>
         ///     ニコニコ トップ ページ URL テキスト
         /// </summary>
@@ -58,6 +54,9 @@
 
         #region Live
 
+        private const string LiveApiForCommunityUrlBase = "http://watch.live.nicovideo.jp/api/";
+        private const string LiveApiForOfficialOrChannelUrlBase = "http://ow.live.nicovideo.jp/api/";
+        private const string LiveApiForExternalUrlBase = "http://ext.live.nicovideo.jp/api/";
         private const string LiveUrlBase = "http://live" + DomainBase;
         private const string LiveApiUrlBase = LiveUrlBase + "api/";
 
